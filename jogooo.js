@@ -14,16 +14,16 @@ while(PEcharmander > 0 && PEpikachu > 0){
     console.log('rodadas ', rodadas)
 
     //dano aleatorio ne
-    flamethrower = Math.floor(Math.random() * 25);
-    thunderbolt = Math.floor(Math.random() * 18)
+    thunderbolt = Math.floor(Math.random() * 25);
+    flamethrower = Math.floor(Math.random() * 18)
 
     //subtrair o dano na vida
-    PEcharmander = PEcharmander - danopika
-    PEpikachu = PEpikachu - danochar
+    PEcharmander = PEcharmander - thunderbolt
+    PEpikachu = PEpikachu - flamethrower
 
     //irformações né
-    console.log("⛈️O picachu deu ", danopika, " de dano!");
-    console.log("🔥O charmander deu ", danochar, " de dano!");
+    console.log("⛈️O picachu deu ", thunderbolt, " de dano!");
+    console.log("🔥O charmander deu ", flamethrower, " de dano!");
 
     //mostrar quanto de vida/energia cada um está
     console.log("O pikachu está com ", PEpikachu, " de vida!");
